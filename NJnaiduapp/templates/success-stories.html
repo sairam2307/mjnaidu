@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}                                          
+{% block content %}
+        
+<section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title">Success  <span>Stories</span></h2><!-- /.inner-banner__title -->
+                <ul class="thm-breadcrumb">
+                    <li class="thm-breadcrumb__item"><a class="thm-breadcrumb__link" href="{% url 'index' %}">Home</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'success_stories' %}">Success Stories</a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Portfolio Page Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="portfolio-page-block portfolio-page-style-three mrb-172">
+            <div class="container">
+                <!-- Content Row -->
+                <div class="row">
+                    <div class="section-header">
+                        <h3 class="title">Deformity Correction</h3>
+                        <h5><a href="#">Rajini 37 Years Iraq</a> <b style="color:red;">- varus deformity rt knee corrected with key hole suv frame (computer assisted ilizarov))</b></h5>
+                        <p>She was complaining of pain and deformity of right knee. She suffered proximal tibia fracture 14 years back which was managed conservatively with pop cast which resulted in genu varum of right knee. She underwent keyhole surgery with suv frame.</p>
+                            <img src="{% static 'assets/images/others/su1.png' %}" alt="About Mock" />
+                       
+                                </div>
+                        </div>
+                    <div class="row">
+                        <div class="section-header mt-4">
+                           
+                            <h3 class="title">Elevator Injury</h3>
+                            <h4><a href="#">Jaswanth Singh 13 Years Old</a> </h4>
+                            <p>13 year old boy brought to Emergency room with pain</p>
+                                <ul class="grid">
+                                    <li>left chest</li>
+                                     <li> abdomen and supra pubic area</li>
+                                      <li>both hip joints</li>
+                                    <li>No H/o LOC, ENT bleed </li>
+                                    </ul>
+                                    <h4 class="title">Diagnosis</h4>
+                                    <ul class="grid">
+                                    <li>Left  Haemothorax   (Moderate)</li>
+                                    <li>Fracture Floor  Of Glenoid And Blade Scapula Left</li>
+                                    <li>Laceration Caudate Lobe Liver</li>
+                                    <li>Laceration Superior Pole Spleen With Haemoperotoneum</li>
+                                    <li>Fracture Neck Of Femur Right</li>
+                                    <li> Subtrochanteric Communited –left.</li>
+                                    <div class="bg-imges mt-4">
+                                     <img src="{% static 'assets/images/others/pre.png' %}" alt="About Mock" />
+                                    <img src="{% static 'assets/images/others/post.png' %}" alt="About Mock" />
+                                    </div>
+                            </div>
+                        </div>
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+                
+          
+        </div><!-- /.portfolio-page-block -->  
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load static %}                                          
+{% block content %}
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title"> <span>Paediatric </span></h2><!-- /.inner-banner__title -->
+                <ul class="thm-breadcrumb">
+                    <li class="thm-breadcrumb__item"><a class="thm-breadcrumb__link" href="{% url 'index' %}">Home</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'orthopaedics' %}">Orthopaedics</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'paediatric' %}">Paediatric</a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Portfolio Page Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="portfolio-page-block portfolio-page-style-three mrb-172">
+            <div class="container">
+                <!-- Content Row -->
+                
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service-sidebar">
+                                <div class="service-sidebar__single">
+                                    <ul class="service-sidebar__list">
+                                       
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'arthritis' %}" class="service-sidebar__list-link">Arthritis</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item ">
+                                            <a href="{% url 'bonetumours' %}" class="service-sidebar__list-link">Bone Tumours</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'illizarov' %}" class="service-sidebar__list-link">Illizarov Technique</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'orthosuv' %}" class="service-sidebar__list-link">Ortho Suv</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'osteoporosis' %}" class="service-sidebar__list-link">Osteoporosis</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'paediatric' %}" class="service-sidebar__list-link">Paediatric Orthopaedics</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'trauma' %}" class="service-sidebar__list-link">Trauma</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                   
+                                    </ul><!-- /.service-sidebar__list -->
+                                </div><!-- /.service-sidebar__single -->
+                                
+                                <div class="service-sidebar__single">
+                                    <div class="service-sidebar__contact">
+                                        <p class="service-sidebar__contact-text"><i class="fa fa-phone"></i><a href="teL:+91-9985 104 104" class="service-sidebar__contact-highlight">+91-9985 104 104</a></p><!-- /.service-sidebar__contact-text -->
+                                        <p class="service-sidebar__contact-text"><i class="fa fa-paper-plane"></i><a href="mailto:info@mjnaiduhospitals.com">info@mjnaiduhospitals.com</a></p><!-- /.service-sidebar__contact-text -->
+                                    </div><!-- /.service-sidebar__contact -->
+                                </div><!-- /.service-sidebar__single -->
+                            </div><!-- /.service-sidebar -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-lg-8">
+                            <div class="service-details__content section-header ">
+                                
+                                <h3 class="service-details__title">Paediatric Orthopaedics </h3><!-- /.service-details__title -->
+                                <p class="service-details__text">
+                                    The hospital has a long tradition of treating children. Not every orthopaedic problem requires surgery and careful and early management of many paediatric disorders can prevent later deformities
+                    
+                                </p>
+                                <h4>Cerebral Palsy and other neuromuscular disorders </h4>
+                                
+                                <p>Hip Congenital/Developmental Disorders:</p>
+                                    <p>Typical conditions treated include:</p>><!-- /.service-details__text -->
+                                 <div class="row">
+                                    <div class="col-md-6"> 
+                                        <ul class="grid">
+                                        <li>Congenital Hip dislocation</li>
+                                        <li>Congenital Coxa Vara</li>
+                                        <li>Legg-Calve-Perthes disease</li>
+                                        <li>Slipped Capital Femoral Epiphysis</li>
+                                        <li>Developmental Hip Abnormalities</li>
+                                        <li>Fractures and Post-traumatic Hip Abnormalities</li>
+                                        <li>Adolescent Hip Pain</li>
+                                
+                                        </ul>
+                                        </div>
+                                        <div class="col-md-6"> 
+                                        <ul style="padding:20px 85px;font-size:16px;">
+                                        <li>Elbow (supracondylar) fractures</li>
+                                        <li>Wrist fractures</li>
+                                        <li>Forearm fractures</li>
+                                        <li>Foot and ankle fractures</li>
+                                        <li>Hip and Pelvic fractures</li>
+                                        <li>Tumours</li>
+                                        <li>Poliomyelitis</li>
+                                
+                                        </ul>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="{% static 'assets/images/others/pae1.jpg' %}">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="{% static 'assets/images/others/pae3.jpg' %}">
+                                    </div>
+                                </div>
+                            </div><!-- /.service-details__content -->
+                        </div><!-- /.col-lg-9 -->
+                    </div><!-- /.row -->
+
+
+
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+                
+          
+        </div><!-- /.portfolio-page-block -->  
+
+        {% endblock %}

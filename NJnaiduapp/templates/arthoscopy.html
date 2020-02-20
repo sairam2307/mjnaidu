@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}                                          
+{% block content %}
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title"> <span>Arthoscopy</span></h2><!-- /.inner-banner__title -->
+                <ul class="thm-breadcrumb">
+                    <li class="thm-breadcrumb__item"><a class="thm-breadcrumb__link" href="{% url 'index' %}">Home</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'arthoscopy' %}">Arthoscopy</a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Portfolio Page Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="portfolio-page-block portfolio-page-style-three mrb-172">
+            <div class="container">
+                <!-- Content Row -->
+                <div class="row">
+                    <div class="section-header">
+                        <h3 class="title">Arthoscopy</h3>	
+					<p>
+                        Knee arthroscopic surgery is a procedure performed through small incisions in the skin
+                        to repair injuries to tissues such as ligaments, cartilage, or bone within the knee joint area.
+                        The surgery is conducted with the aid of an arthroscope, which is a very small instrument 
+                        guided by a lighted scope attached to a television monitor. Other instruments are inserted 
+                        through three incisions around the knee. Arthroscopic surgeries range from minor procedures 
+                        such as flushing or smoothing out bone surfaces or tissue fragments (lavage and debridement)
+                        associated with osteoarthritis, to the realignment of a dislocated knee and ligament grafting
+                        surgeries.
+                        The range of surgeries represents very different procedures, risks, and aftercare requirements.</p>
+                        <h4>Treatment of these acute injuries include such common surgeries as:</h4>
+                        <ul class="grid">
+                            <li>Repairs of a torn ligament or reconstruction of the ligament.</li>
+                            <li>ACL Reconstruction</li>
+                            <li>PCL Reconstruction</li>
+                            <li>Meniscal repair</li>
+                            <li>Arthroscopic bankart repair for recurrent shoulder dislocation	</li>
+                        </ul>
+                        <p>A Bankart lesion is a shoulder injury. It occurs when there is a tear in the labrum. This is the fibrous cartilage that helps hold the shoulder joint in place. Surgery can repair this injury. This surgery may be done through a few small incisions. This is called arthroscopic surgery.</p>
+                            <p>The labrum is a thick band of cartilage attached to the glenoid. It lines the shoulder socket and helps keep the ball of the humorous in place. This arthroscopic procedure is used to repair a detached labrum. The labrum and glenohumeral ligament are reattached to the glenoid. Surgical anchors or sutures are used.</p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="art-img">
+                                    <img src="{% static 'assets/images/others/01.png' %}">
+                                    <h4>Intact Acl And Pcl</h4>
+                                </div> 
+                            </div>
+                                <div class="col-md-4">
+                                    <div class="art-img">
+                                    <img src="{% static 'assets/images/others/02.png' %}">
+                                    <h4>Acl Tear</h4>
+                                </div>
+                            </div>
+                                <div class="col-md-4">
+                                    <div class="art-img">
+                                    <img src="{% static 'assets/images/others/03.png' %}">
+                                    <h4>Acl Reconstruction</h4>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+                
+          
+        </div><!-- /.portfolio-page-block -->  
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}                                          
+{% block content %}
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title">Our <span>packages</span></h2><!-- /.inner-banner__title -->
+                <ul class="thm-breadcrumb">
+                    <li class="thm-breadcrumb__item"><a class="thm-breadcrumb__link" href="{% url 'index' %}">Home</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'packages' %}">packages </a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Portfolio Page Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="portfolio-page-block portfolio-page-style-three mrb-1700">
+            <div class="container">
+                <!-- Content Row -->
+                <div class="row">
+                    <div class="col">
+                        <figure>
+                            <a class="popup-image" href="#">
+                                <img src="{% static 'assets/images/portfolio/single/p002.jpg' %}" alt="Portfolio Image" />
+                            </a>
+                        </figure>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+                
+          
+        </div><!-- /.portfolio-page-block -->  
+
+{% endblock %}

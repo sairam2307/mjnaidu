@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}                                          
+{% block content %}
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title"> <span>osteoporosis</span></h2><!-- /.inner-banner__title -->
+                <ul class="thm-breadcrumb">
+                    <li class="thm-breadcrumb__item"><a class="thm-breadcrumb__link" href="{% url 'index' %}">Home</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'osteoporosis' %}">osteoporosis</a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Portfolio Page Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="portfolio-page-block portfolio-page-style-three mrb-172">
+            <div class="container">
+                <!-- Content Row -->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service-sidebar">
+                                <div class="service-sidebar__single">
+                                    <ul class="service-sidebar__list">
+                                       
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'arthritis' %}" class="service-sidebar__list-link">Arthritis</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item ">
+                                            <a href="{% url 'bonetumours' %}" class="service-sidebar__list-link">Bone Tumours</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'illizarov' %}" class="service-sidebar__list-link">Illizarov Technique</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'orthosuv' %}" class="service-sidebar__list-link">Ortho Suv</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'osteoporosis' %}" class="service-sidebar__list-link">Osteoporosis</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'paediatric' %}" class="service-sidebar__list-link">Paediatric Orthopaedics</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'trauma' %}" class="service-sidebar__list-link">Trauma</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                   
+                                    </ul><!-- /.service-sidebar__list -->
+                                </div><!-- /.service-sidebar__single -->
+                                
+                                <div class="service-sidebar__single">
+                                    <div class="service-sidebar__contact">
+                                        <p class="service-sidebar__contact-text"><i class="fa fa-phone"></i><a href="teL:+91-9985 104 104" class="service-sidebar__contact-highlight">+91-9985 104 104</a></p><!-- /.service-sidebar__contact-text -->
+                                        <p class="service-sidebar__contact-text"><i class="fa fa-paper-plane"></i><a href="mailto:info@mjnaiduhospitals.com">info@mjnaiduhospitals.com</a></p><!-- /.service-sidebar__contact-text -->
+                                    </div><!-- /.service-sidebar__contact -->
+                                </div><!-- /.service-sidebar__single -->
+                            </div><!-- /.service-sidebar -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-lg-8">
+                            <div class="service-details__content section-header ">
+                                
+                                <h3 class="service-details__title">Illizarov Technique </h3><!-- /.service-details__title -->
+                                <p class="service-details__text">
+                                    
+                                    In Osteoporosis bone has become too porous - there are wide space or 'holes' in the inner trabecular bone. Since this bone is crucial to overall bone strength, Osteoporosis of bones can lead the bone to fracture or when in the spine, vertebrae can collapse. <br>
+                                    The cause of Osteomaliacia is usually insufficient of Vitamin D which prevents the normal mineralization of calcium and phosphorous to build strong bones. 
+                                    </p>
+                                    <h4>Symptoms of Osteomalacia or Osteoporosis. </h4>
+                                    <p>
+                                    Osteomalacia usually reveals itself in aches and pain in lumbar region of the spine (lower back) or in the thighs. As the condition progresses these aches may spread to arms and ribs.
+                                    Osteoporosis, on the other hand, usually has no symptoms - until there is a bone fracture. It is this reason why anyone over 30 who fractures a bone and all persons as they age, should have a dexa scan to asses their bone density.
+                                    </p>
+                                    <h4>Treatments of Osteomalacia or Osteoporosis </h4>
+                                    <p>
+                                    The treatments of these two conditions differ. Naturally Osteomalacia requires Vitmin D supplementation </p>
+                                 <p>The following are osteoporosis treatment and prevention measures:</p><!-- /.service-details__text -->
+                                        <ul class="grid">
+                                            <li>Lifestyle changes, including quitting smoking, curtailing excessive alcohol intake, exercising regularly, and consuming a balanced diet with adequate calcium and vitamin D</li>
+                                            <li>Medications that stop bone loss and increase bone strength</li>
+                                            <li>Medications that increase bone formation</li>
+                                    
+                                            </ul>
+                               
+                            </div><!-- /.service-details__content -->
+                        </div><!-- /.col-lg-9 -->
+                    </div><!-- /.row -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+                
+          
+        </div><!-- /.portfolio-page-block -->  
+{% endblock %}

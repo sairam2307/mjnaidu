@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}                                          
+{% block content %}
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title">Our <span>Testimonial</span></h2><!-- /.inner-banner__title -->
+                <ul class="thm-breadcrumb">
+                    <li class="thm-breadcrumb__item"><a class="thm-breadcrumb__link" href="{% url 'index' %}">Home</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'testimonial' %}">Our Testimonial</a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Portfolio Page Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="portfolio-page-block portfolio-page-style-three mrb-172">
+            <div class="container">
+                <!-- Content Row -->
+                <div class="row" >
+                    <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
+                    <p class="testimonial_para">
+
+                        I had pain both hips and difficulty in walking, when i met doctors in Tirupathi they diagnosed me with Bilateral Avascular Necrosis of femoral head. I underwent bilateral core decompression and bone grafting, but developed infection. I was bed ridden for 5 months. I met Dr M J Naidu and was advised bilateral total hip replacement after clearing infection. Dr M J Naidu has given me a new lease of life with replacement and was able to walk with support after 3 days of surgery. I was pain free and walking with out support in 1 month.</p><br>
+                    <div class="row">
+                    <div class="col-sm-2">
+                        <img src="{% static 'assets/images/others/ts4.jpg' %}" class="img-responsive" style="width: 80px">
+                        </div>
+                        <div class="col-sm-10">
+                        <h4><strong>Mr. Sudhakar Naidu 42 Years Tirupathi</strong></h4>
+                        <p class="testimonial_subtitle"><span>- Infective Bilateral Avn Hip Underwent Bilateral Total Hip Replacement</span>
+                        <!-- <span>Officeal All Star Cafe</span> -->
+                        </p>
+                    </div>
+                    </div>
+                  </div>
+               
+                  <div class="row" >
+                    <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
+                    <p class="testimonial_para">
+
+                        
+I was diagnosed with rheumatoid arthritis in the last stages of severe osteoarthritis of both knees, by that time i was already bed ridden for 7 years. I met Dr M J Naidu he said after Bilateral Total Knee Replacement i will be able to stand and do my daily activities. Due to financial problems i was able to go back to him only after 2 years for surgery.
+Dr M J Naidu made me stand 5 days after surgery. I gained confidence that i will be able to walk only after standing on my own feet. Now i am able to walk and do my daily activities with out any problems.
+Dr M J Naidu gave me new lease of life.
+								
+									</p><br>
+                    <div class="row">
+                    <div class="col-sm-2">
+                        <img src="{% static 'assets/images/others/ts7.jpg' %}" class="img-responsive" style="width: 80px">
+                        </div>
+                        <div class="col-sm-10">
+                        <h4><strong>Mrs Shamim Banu 42 Years Vijayawada</strong></h4>
+                        <p class="testimonial_subtitle"><span>- Rhematoid Arthritis With Bilateral Osteoarthritis Knee Underwent Bilateral Total Knee Replacement
+                        </span>
+                        <!-- <span>Officeal All Star Cafe</span> -->
+                        </p>
+                    </div>
+                    </div>
+                  </div>
+                 
+            </div><!-- /.container-fluid -->
+                
+          
+        </div><!-- /.portfolio-page-block -->  
+{% endblock %}

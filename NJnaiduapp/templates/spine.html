@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load static %}                                          
+{% block content %}
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title"> <span>Spine</span></h2><!-- /.inner-banner__title -->
+                <ul class="thm-breadcrumb">
+                    <li class="thm-breadcrumb__item"><a class="thm-breadcrumb__link" href="{% url 'index' %}">Home</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'spine' %}">Spine</a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Portfolio Page Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="portfolio-page-block portfolio-page-style-three mrb-172">
+            <div class="container">
+                <!-- Content Row -->
+                <div class="row">
+                    <div class="section-header">
+                        <h3 class="title">What is Spine?</h3>	
+					<p>
+                        Spine is made up of many individual bones called vertebrae, joined together by muscles and ligaments. Flat, soft intervertebral discs separate and cushion each vertebra from the next. Because the vertebrae are separate, the spine is flexible and can bend. Together the vertebrae, discs, muscles, and ligaments make up the vertebral column or spine. Different regions of the spine are named differently. The cervical spine refers to the neck, the thoracic spine to the chest, and the lumbar and sacral spines to the low back. The cervical bones - the vertebrae - are smaller in size when compared to other spinal vertebrae. The purpose of the cervical spine is to contain and protect the spinal cord, support the skull, and enable diverse head movement (e.g., rotate side to side, bend forward and backward).A complex system of ligaments, tendons, and muscles help to support and stabilize the cervical spine. Ligaments work to prevent excessive movement that could result in serious injury. Muscles also help to provide spinal balance and stability, and enable movement. Muscles contract and relax in response to nerve impulses originating in the brain. Some muscles work in pairs or as antagonists. This means when a muscle contracts, the opposing muscle relaxes. There are different types of muscle: forward flexors, lateral flexors, rotators, and extensors.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                            <h4>What is Spine Surgery?</h4>
+                            <p>
+                            Spine surgery is an invasive pain management procedure in which a specially trained doctor (the surgeon) uses instruments to make incisions to repair damaged spinal tissues. Or in other words Spine surgery whether back or neck surgery, can be sum up as an advanced treatment option for pain and disability caused by an identifiable lesion in the patient's anatomy that has not adequately improved with non-surgical treatments. Although spinal arthritis tends to be chronic, the symptoms are rarely progressive and rarely require surgery on the painful spinal joints.
+                            </p>
+                            <img src="{% static 'assets/images/others/disc.jpg' %}">
+                            </div>
+                            <div class="col-md-6 mt-4">
+                            <img src="{% static 'assets/images/others/maxresdefault.jpg' %}">
+                            </div>
+                            </div>
+                            <div class="col-md-12">
+                                <h4 style="padding-top:35px;">Types of Spine Surgery</h4>
+                                <p>There are different types of Spine surgeries, which include the following:</p>
+                                <ul class="grid">
+                                <li>
+                                <b>Discectomy: </b>is a procedure to remove a portion of the disc that rests between each vertebrae. A herniated disc is the most common reason for spine surgery. In this type of spine surgery, the herniated disc is removed and relieves the pressure on the nerves.</li>
+                                <li><b>Foraminotomy:</b> is also a procedure used to relieve pressure on a nerve, but in this case, the nerve is being pinched by more than just herniated disc. A foramenotomy removes a portion of bone and other tissue that may be compressing the nerve as it exits the spinal column.</li>
+                                <li><b>Spine Fusion:</b> is a surgery that is done to eliminate motion between adjacent vertebrae. The spine fusion may be done because to treat a problem such as spondylolisthesis (unstable spine), or it may be done because of the extent of other surgery (such as a laminectomy).</li>
+                                <li><b>Spinal Disc Replacement:</b> is a new surgery that is still quite uncommon. Spine disc replacement is done to treat specific types of back pain, while avoiding the problems associated with spine fusion surgery.</li>
+                                <li><b>Cervical Spine Surgery:</b> When the cervical disease encompasses more than just the disc space, the spine surgeon may recommend removal of the vertebral body as well as the disc spaces at either end, to completely decompress the cervical canal. This procedure is often done for multi-level cervical stenosis with spinal cord compression caused by bone spur (osteophytes) growth.
+                                </li>
+                                <li><b>Lumbar Laminectomy:</b> is a surgical procedure most often performed to treat leg pain related to herniated discs, spinal stenosis, and other related conditions. The goal of a laminectomy is to relieve pressure on the spinal cord or spinal nerve by widening the spinal canal. This is done by removing or trimming the lamina (roof) of the vertebrae to create more space for the nerves.
+                                </li>
+                                <li><b>Vertebroplasty:</b> is a procedure in which a special type of synthetic cement material is injected inside the broken spine bone, giving excellent results in pain relief with very low incidence of side effects. This procedure can be safely done in osteoporotic fractures, painful spine bones after spread of cancer, non cancerous painful tumors of spine bones or to augment strength of weak spine bone prior to insertion of screws to increase the holding power of the weak bones for other surgical procedures.
+                                </li>
+                                
+                                </ul>
+                                <div class="col-md-12">
+                                <h4>Common Spinal Conditions</h4>
+                                <p>Facet joint osteoarthritis is a gradual process that breaks down cartilage between joints. The loss of cartilage causes more friction between the joints, resulting in pain and stiffness. This disorder can also result in compression of nerves, which causes pain as well.</p>
+                                <p>Spinal stenosis is a narrowing of the spinal canal or neural passageways (foramina) that can place pressure on nerves in the spinal cord. Stenosis is a gradual result of aging, and wear and tear on the spine.</p>
+                                <p>Degenerative disc disease is a gradual process that affects the structural integrity of discs. As people age, disc moisture decreases, resulting in discs that may shrink, wrinkle and even crack.
+                                    These disc changes allow vertebral structures to compress, resulting in less space for nerves to exit the spinal column. The compressed nerves may swell and cause pain.</p>
+                                <p> Spondylolisthesis is a condition where one vertebra slips over another, causing spine misalignment and instability. It may be present at birth and develop over time, or be the result of physical activity or deteriorating spinal parts, such as discs.</p>
+                                <p> Disc herniation is a rupture of the disc where the inner core of the disc bulges out through the outer layer. If the bulging disc presses on a spinal nerve, the pressure can cause pain. A common symptom of a herniated disc is sciatica, the term used to describe pain that travels downward along the sciatic nerve from the buttock to the thigh and leg. Herniated discs are also known as "Slipped" or "Ruptured" discs.</p>
+                                <p>Osteoporosis is a disorder caused by bone mineral loss that results in fragile bones. This disorder can cause vertebral compression fractures or a humped back. </p>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-md-6">
+                                        <h4>Mri Scan Before Injection</h4>
+                                    <img src="{% static 'assets/images/others/spine2.jpg' %}">
+                                    
+                                    </div>
+                                    <div class="col-md-6">
+                                     <h4>Mri Scan After Injection</h4>
+                                    <img src="{% static 'assets/images/others/spine1.jpg' %}">
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+                
+          
+        </div><!-- /.portfolio-page-block -->  
+{% endblock %}

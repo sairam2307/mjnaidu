@@ -1,0 +1,225 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from htmlguru.net/wekala/wekala/index02.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Jan 2020 06:23:48 GMT -->
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Specific Meta
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="M J Naidu Super Speciality hospital">
+    <meta name="keywords" content="M J Naidu Super Speciality hospital" />
+    <meta name="author" content="creative-wp">
+
+    <!-- Titles
+    ================================================== -->
+    <title>M J Naidu Super Speciality hospital</title>
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="{% static 'assets/images/favicon.ico' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/images/android-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/images/apple-icon-144x144.png' %}">
+
+    <!-- Custom Font
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,800,900&amp;display=swap" rel="stylesheet">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/simple-scrollbar.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/odometer-theme-default.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    <script src="{% static 'assets/js/modernizr.min.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">>
+    
+</head>
+
+<body data-spy="scroll" data-offset="170" data-target=".navigation-area">
+  
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Start Preloader
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--> 
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div><!-- /preloader-icon -->
+        </div><!-- /preloader-inner -->
+    </div><!-- /preloader -->
+   
+    <!--********************************************************-->
+    <!--********************* SITE CONTENT *********************-->
+    <!--********************************************************-->
+    <div class="site-content home-two">
+       
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Site Header
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+       
+        <header class="site-header default-header-style">
+             <div class="header-top">
+            <div class="container-fluid">
+             <div class="row">
+                    <div class="col-md-4">
+                        <div class="social-status mrt-900">
+                                   <a href="#"><i class="fa fa-facebook"></i></a>
+                                   <a href="#"><i class="fa fa-twitter"></i></a>
+                                   <a href="#"><i class="fa fa-instagram"></i></a>
+                                   <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="search_wid_sidebar">
+                            <form>
+                                <input type="search" placeholder="Search for Disease Treatment, Symptoms, Healing...">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-navigation-right">
+                               <ul>
+                                <li>
+                                    <div class="contact-info">
+                                   <i class="fa fa-phone"></i> <a href="#">+91-9985 104 104</a>
+                                    </div><!--~./ contact-info ~-->
+                                </li>
+                                <li>
+                                <div class="lets-talk-areas">
+                                   <a href="#" data-toggle="modal" data-target="#modal_box1"  title="quick view"><i class="fa fa-map-marker"></i>
+                                    Vijayawada </a>
+                                </div>
+                                </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container-fluid">
+               
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="navigation-area">  
+                            <!-- Site Branding -->
+                            <div class="site-branding">
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'assets/images/logo.png' %}" alt="Site Logo" />
+                                </a>
+                            </div><!--  /.site-branding -->
+
+                            <!-- Site Navigation -->
+                            <div class="site-navigation">
+                                <div class="hamburger-menus">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <nav class="navigation">
+                                    <div class="overlaybg"></div><!--  /.overlaybg -->
+                                    <!-- Main Menu -->        
+                                    <div class="menu-wrapper">
+                                        <div class="menu-content">
+                                            <ul class="mainmenu">         
+                                                <li>
+                                                    <a class="nav-link active" href="{% url 'index' %}">Home</a>
+                                                </li> 
+                                                      
+                                                <li class="nav-item dropdown">
+                                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us</a>
+                                                    <div class="dropdown-menu left-1">
+                                                        <div class="dropdown">
+                                                            <a class="dropdown-item" href="{% url 'our_hospital' %}">Our Hospital</a>
+                                                            <a class="dropdown-item" href="{% url 'chairman' %}">Chairman's Profile</a>
+                                                            <a class="dropdown-item" href="{% url 'our_team' %}">Our Team</a>
+                                                            <a class="dropdown-item" href="{% url 'testimonial' %}">Testimonial</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Specialities</a>
+                                                    <div class="dropdown-menu left-1">
+                                                        <div class="dropdown">
+                                                            <a class="dropdown-item" href="{% url 'arthoplasty' %}">arthroplasty</a>
+                                                            <a class="dropdown-item" href="{% url 'arthoscopy' %}">arthroscopy</a>
+                                                            <a class="dropdown-item" href="{% url 'orthopaedics' %}">Orthopaedics</a>
+                                                            <a class="dropdown-item" href="{% url 'spine' %}">Spine</a>
+                                                            <a class="dropdown-item" href="{% url 'radiology' %}">Radiology</a>
+                                                            <a class="dropdown-item" href="{% url 'painmanagement' %}">Pain Management</a>
+                                                            <a class="dropdown-item" href="{% url 'physiotheraphy' %}">Physiotheraphy
+                                                                </a>										
+                                                           </div>
+                                                    </div>
+                                                </li>
+                                                 
+                                                <li>
+                                                    <a class="nav-link" href="{% url 'success_stories' %}">Success Stories</a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Patient Resources</a>
+                                                    <div class="dropdown-menu left-1">
+                                                        <div class="dropdown">
+                                                            <a class="dropdown-item" href="{% url 'empanelment' %}">Empanelment</a>
+                                                            <a class="dropdown-item" href="{% url 'ehs_ntr' %}">EHS & NTR Vidya Seva</a>
+                                                            <a class="dropdown-item" href="{% url 'acl_rehab' %}">ACL Rehab Protocol </a>
+                                                                                                    
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                  
+                                                <li>
+                                                    <a class="nav-link" href="{% url 'packages' %}">Packages</a>
+                                                </li>  
+                                                 <li>
+                                                    <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+                                                </li>
+                                              
+                                                 <li>
+                                                    <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                                                </li>
+
+                                            </ul> <!-- /.menu-list -->
+                                        </div> <!-- /.hours-content-->
+                                    </div><!-- /.menu-wrapper --> 
+                                </nav>
+                            </div><!--  /.site-navigation -->
+
+                            <div class="header-navigation-right">
+                                <div class="lets-talk-area">
+                                    <a class="btn btn-default" data-toggle="modal" data-target="#modal_box2" href="#">Book Appointment</a>
+                                </div><!--~./ lets-talk-area ~-->
+                            </div><!--~./ header-navigation-right ~-->
+                        </div><!--  /.navigation-area -->
+                    </div><!--  /.col-12 -->
+                </div><!--  /.row -->
+            </div><!--  /.container-fluid -->
+        </header><!--~~./ end site header ~~-->
+        <!--~~~ Sticky Header ~~~-->
+        <div id="sticky-header"></div><!--~./ end sticky header ~-->
+        {% block content %}
+        {% endblock %}
+        {% include "footer.html" %}

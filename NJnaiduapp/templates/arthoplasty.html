@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}                                          
+{% block content %}
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title"> <span>Arthoplasty </span></h2><!-- /.inner-banner__title -->
+                <ul class="thm-breadcrumb">
+                    <li class="thm-breadcrumb__item"><a class="thm-breadcrumb__link" href="{% url 'index' %}">Home</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'arthoplasty' %}">Arthoplasty</a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Portfolio Page Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section class="service-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="service-sidebar">
+                            <div class="service-sidebar__single">
+                                <ul class="service-sidebar__list">
+                                   
+                                    <li class="service-sidebar__list-item">
+                                        <a href="{% url 'htp_replacement' %}" class="service-sidebar__list-link">HIP Replacement</a>
+                                    </li><!-- /.service-sidebar__list-item -->
+                                    <li class="service-sidebar__list-item ">
+                                        <a href="{% url 'knee_replacement' %}" class="service-sidebar__list-link">Knee Replacement</a>
+                                    </li><!-- /.service-sidebar__list-item -->
+                               
+                                </ul><!-- /.service-sidebar__list -->
+                            </div><!-- /.service-sidebar__single -->
+                            
+                            <div class="service-sidebar__single">
+                                <div class="service-sidebar__contact">
+                                    <p class="service-sidebar__contact-text"><i class="fa fa-phone"></i><a href="teL:+91-9985 104 104" class="service-sidebar__contact-highlight">+91-9985 104 104</a></p><!-- /.service-sidebar__contact-text -->
+                                    <p class="service-sidebar__contact-text"><i class="fa fa-paper-plane"></i><a href="mailto:info@mjnaiduhospitals.com">info@mjnaiduhospitals.com</a></p><!-- /.service-sidebar__contact-text -->
+                                </div><!-- /.service-sidebar__contact -->
+                            </div><!-- /.service-sidebar__single -->
+                        </div><!-- /.service-sidebar -->
+                    </div><!-- /.col-lg-3 -->
+                    <div class="col-lg-8">
+                        <div class="service-details__content">
+                            <div class="service-details__image">
+                                <!-- <img src="assets/images/others/orthopaedics.jpg" alt="About Mock" /> -->
+
+                            </div><!-- /.service-details__image -->
+                            <h3 class="service-details__title">Arthoplasty
+                            </h3><!-- /.service-details__title -->
+                            <p class="service-details__text">Orthopedic trauma is a severe injury to part of the musculoskeletal system, and often the result of a sudden accident requiring immediate medical attention. While not all orthopedic trauma is life-threatening, it is life altering. Therefore, your choice of doctors is extremely important. Orthopaedic trauma surgeons are able to follow patients through all stages of recovery and enlist the help of other specialists, if needed, to treat complex cases. By maintaining open communication with all providers, they are able to ensure each patient receives the care needed to resume a full and active lifestyle</p><!-- /.service-details__text -->
+                            
+                           
+                        </div><!-- /.service-details__content -->
+                    </div><!-- /.col-lg-9 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section>
+
+     
+        {% endblock %}
+    
+     

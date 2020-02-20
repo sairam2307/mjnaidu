@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}                                          
+{% block content %}
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title">Employee's Health  <span>Scheme</span></h2><!-- /.inner-banner__title -->
+                <ul class="thm-breadcrumb">
+                    <li class="thm-breadcrumb__item"><a class="thm-breadcrumb__link" href=" {% url 'index' %}">Home</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'ehs_ntr' %}">Employee's Health Scheme</a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Portfolio Page Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="portfolio-page-block portfolio-page-style-three mrb-172">
+            <div class="container">
+                <!-- Content Row -->
+                <div class="row">
+                    <div class="section-header">
+                        <h3 class="title">M J Naidu Hospitals – Employee's Health Scheme </h3>
+                        <p>Employees Health Scheme is intended to provide cashless treatment to all the State Government employees including the State Government pensioners, along with their dependent family members through a network of empaneled hospitals of Dr.NTR Vaidyaseva Trust,
+                            in lieu of the present medical reimbursement system	</p>
+                       <div class="row">
+
+                        <div class="col-lg-8">
+                            <h4 class="title">Dr.NTR Vaidyaseva Trust</h4>
+                            <h4 class="title">Twin 5 storied , 150 bed World class Hospital </h4>
+                            <p>Rajiv Aarogyasri Health Insurance Scheme was launched on 01.04.2007 by the state of Andhra Pradesh was designed mainly to assist poor families from catastrophic health expenditure.
+                                Dr. NTR Vaidya Seva is the flagship scheme of all health initiatives of the State Government with a mission to provide quality healthcare to the poor. 
+                                The aim of the Government is to achieve "Health for All" In order to facilitate the effective implementation of the scheme, the State Government has set up the Dr. NTR Vaidya Seva Trust.
+                                We cover the following super specialty services under the Rajiv Aarogyasri health insurance scheme</p>
+                                <b style="color:red;font-weight:600;"><h5>Orthopaedics and poly-trauma</h5></b>
+                                    <h5>Neuro surgery</h5>
+                                    <h5>Urology</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ntrs-img">
+                                <img src="{% static 'assets/images/others/ntr.png' %}" alt="About Mock" />
+                            </div>
+                        </div>
+                       </div>
+
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+                
+          
+        </div><!-- /.portfolio-page-block -->  
+
+    {% endblock %}

@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% load static %}                                          
+{% block content %}
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title"> <span>Arthritis</span></h2><!-- /.inner-banner__title -->
+                <ul class="thm-breadcrumb">
+                    <li class="thm-breadcrumb__item"><a class="thm-breadcrumb__link" href="{% url 'index' %}">Home</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'orthopaedics' %}">Orthopaedics</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'arthritis' %}">Arthritis</a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Portfolio Page Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="portfolio-page-block portfolio-page-style-three mrb-172">
+            <div class="container">
+                <!-- Content Row -->
+                <!-- <div class="row">
+                    <div class="section-header">
+                        <h3 class="title">Arthritis</h3>
+                        <p>
+                        Arthritis is a form of joint disorder that involves inflammation of
+                        one or more joints. There are over 100 different forms of arthritis.
+                        The most common form, osteoarthritis (degenerative joint disease), 
+                        is a result of trauma to the joint, infection of the joint, or age.
+                        Other arthritis forms are rheumatoid arthritis, psoriatic arthritis,
+                        and related autoimmune diseases.Septic arthritis is caused by joint
+                        infection.<p>
+                        <img  src="assets/images/others/ortho.jpg">
+    
+                    </div>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service-sidebar">
+                                <div class="service-sidebar__single">
+                                    <ul class="service-sidebar__list">
+                                       
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'arthritis' %}" class="service-sidebar__list-link">Arthritis</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item ">
+                                            <a href="{% url 'bonetumours' %}" class="service-sidebar__list-link">Bone Tumours</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'illizarov' %}" class="service-sidebar__list-link">Illizarov Technique</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'orthosuv' %}" class="service-sidebar__list-link">Ortho Suv</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'osteoporosis' %}" class="service-sidebar__list-link">Osteoporosis</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'paediatric' %}" class="service-sidebar__list-link">Paediatric Orthopaedics</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                        <li class="service-sidebar__list-item">
+                                            <a href="{% url 'trauma' %}" class="service-sidebar__list-link">Trauma</a>
+                                        </li><!-- /.service-sidebar__list-item -->
+                                   
+                                    </ul><!-- /.service-sidebar__list -->
+                                </div><!-- /.service-sidebar__single -->
+                                
+                                <div class="service-sidebar__single">
+                                    <div class="service-sidebar__contact">
+                                        <p class="service-sidebar__contact-text"><i class="fa fa-phone"></i><a href="teL:+91-9985 104 104" class="service-sidebar__contact-highlight">+91-9985 104 104</a></p><!-- /.service-sidebar__contact-text -->
+                                        <p class="service-sidebar__contact-text"><i class="fa fa-paper-plane"></i><a href="mailto:info@mjnaiduhospitals.com">info@mjnaiduhospitals.com</a></p><!-- /.service-sidebar__contact-text -->
+                                    </div><!-- /.service-sidebar__contact -->
+                                </div><!-- /.service-sidebar__single -->
+                            </div><!-- /.service-sidebar -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-lg-8">
+                            <div class="service-details__content">
+                                
+                                <h3 class="service-details__title">Arthritis  </h3><!-- /.service-details__title -->
+                                <p class="service-details__text">
+                                    Arthritis is a form of joint disorder that involves inflammation of
+                                    one or more joints. There are over 100 different forms of arthritis.
+                                    The most common form, osteoarthritis (degenerative joint disease), 
+                                    is a result of trauma to the joint, infection of the joint, or age.
+                                    Other arthritis forms are rheumatoid arthritis, psoriatic arthritis,
+                                    and related autoimmune diseases.Septic arthritis is caused by joint
+                                    infection.</p><!-- /.service-details__text -->
+                                
+                                    <img  src="{% static 'assets/images/others/ortho.jpg' %}">
+
+                            </div><!-- /.service-details__content -->
+                        </div><!-- /.col-lg-9 -->
+                    </div><!-- /.row -->
+
+
+
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+                
+          
+        </div><!-- /.portfolio-page-block -->  
+
+     {% endblock %}

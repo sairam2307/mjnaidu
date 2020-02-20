@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}                                          
+{% block content %}
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title"> <span>Knee Replacement </span></h2><!-- /.inner-banner__title -->
+                <ul class="thm-breadcrumb">
+                    <li class="thm-breadcrumb__item"><a class="thm-breadcrumb__link" href="{% url 'index' %}">Home</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'arthoplasty' %}">Arthoplasty</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'knee_replacement' %}">Knee Replacement</a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Portfolio Page Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section class="service-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="service-sidebar">
+                            <div class="service-sidebar__single">
+                                <ul class="service-sidebar__list">
+                                   
+                                    <li class="service-sidebar__list-item">
+                                        <a href="{% url 'htp_replacement' %}" class="service-sidebar__list-link">HIP Replacement</a>
+                                    </li><!-- /.service-sidebar__list-item -->
+                                    <li class="service-sidebar__list-item ">
+                                        <a href="{% url 'knee_replacement' %}" class="service-sidebar__list-link">Knee Replacement</a>
+                                    </li><!-- /.service-sidebar__list-item -->
+                               
+                                </ul><!-- /.service-sidebar__list -->
+                            </div><!-- /.service-sidebar__single -->
+                            
+                            <div class="service-sidebar__single">
+                                <div class="service-sidebar__contact">
+                                    <p class="service-sidebar__contact-text"><i class="fa fa-phone"></i><a href="teL:+91-9985 104 104" class="service-sidebar__contact-highlight">+91-9985 104 104</a></p><!-- /.service-sidebar__contact-text -->
+                                    <p class="service-sidebar__contact-text"><i class="fa fa-paper-plane"></i><a href="mailto:info@mjnaiduhospitals.com">info@mjnaiduhospitals.com</a></p><!-- /.service-sidebar__contact-text -->
+                                </div><!-- /.service-sidebar__contact -->
+                            </div><!-- /.service-sidebar__single -->
+                        </div><!-- /.service-sidebar -->
+                    </div><!-- /.col-lg-3 -->
+                    <div class="col-lg-8">
+                        <div class="service-details__content section-header">
+                            <!-- <div class="service-details__image">
+                                <img src="{% static 'assets/images/others/orthopaedics.jpg" alt="About Mock" />
+
+                            </div> -->
+                            <!-- /.service-details__image -->
+                            <h3 class="service-details__title">Knee Replacement
+                            </h3><!-- /.service-details__title -->
+                            <p class="service-details__text"> Knee replacement is a procedure in which the surgeon removes damaged
+                                or diseased parts of the patient's knee joint and replaces them with
+                                new artificial parts. The operation itself is called knee 
+                                arthroplasty . The artificial joint itself is called a prosthesis. 
+                                Most knee prostheses have four components or parts, and are made of
+                                a combination of metal and plastic,
+                                or metal and ceramic in some newer models.</p><!-- /.service-details__text -->
+                            
+                                <h4>Purpose</h4>
+                                <p>Knee arthroplasty has two primary purposes: pain relief and improved functioning of the knee joint. Because of the importance of the knee to a person's ability to stand upright, improved joint functioning includes greater stability in the knee.</p>
+                                    <p>Disorders and conditions that may lead to the need for knee replacement surgery include :</p>
+                                    <ul class="grid">
+                                    <li>	Osteoarthritis (OA).  </li>
+                                    <li>Rheumatoid arthritis (RA).</li>
+                                    <li>Trauma. Damage to the hip joint from a fall, automobile accident, or workplace or athletic injury may trigger the process of cartilage breakdown in the hip joint.</li>
+                                    
+                                </ul>
+                                <h4>For whom is this Surgery?</h4>
+                                    <p>
+                                    This can be answered by asking yourself the following questions.
+                                    </p>
+                                    <ul class="grid">
+                                        <li> Do I have Daily Pain?</li>
+                                        <li>Does my pain restrict my activities and enjoy life?</li>
+                                        <li>Do I avoid going out due to pain?</li>
+                                        <li>Do I avoid walking, exercising etc?</li>
+                                        <li>Has my world become smaller because of pain?</li>
+                                        </ul>
+                                        <p> If you answer yes for one or more of these questions it is better to consult your doctor and decide regarding having a joint replacement surgery.</p>
+                        </div><!-- /.service-details__content -->
+                    </div><!-- /.col-lg-9 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section>
+{% endblock %}

@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% load static %}                                          
+{% block content %}
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title">Our <span>Gallery</span></h2>
+                <ul class="thm-breadcrumb">
+                    <li class="thm-breadcrumb__item"><a class="thm-breadcrumb__link" href="{% url 'index' %}">Home</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{% url 'gallery' %}">Gallery</a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Portfolio Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="portfolio-block mrb-200s ">
+            <div class="container">
+                <!-- Filter Row -->
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <ul class="portfolio-filter" data-animate="hg-fadeInUp">
+                            <li>
+                                <a href="#" data-filter="*" class="filter active">All</a>
+                            </li> 
+                            <li>
+                                <a href="#" data-filter=".animation" class="filter">Event 1</a>
+                            </li>  
+                            <li>
+                                <a href="#" data-filter=".advertisment" class="filter"> Event 2</a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".userinterface" class="filter">Event 3</a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".3ddesign" class="filter">Event 4</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.col-12 -->
+                </div><!-- /.row -->
+
+                <!-- Content Row -->
+                <div class="row portfolio-grid">
+                    <div class="col-md-6 col-lg-4 3ddesign item">
+                        <div class="portfolio-item" data-animate="hg-zoomIn">
+                            <figure class="portfolio-thumb">
+                                <img src="{% static 'assets/images/portfolio/2/u5.jpg' %}" alt="Portfolio Item">
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!--  /.overlay -->
+                                    <div class="popup">
+                                        <div class="popup-inner">
+                                            <a href="{% static 'assets/images/portfolio/2/u5.jpg' %}"class="popup-image"><i class="fa fa-search"></i></a>
+                                        </div><!-- /.popup-inner -->
+                                    </div><!-- /.popup -->
+                                </div><!-- /.overlay-wrapper -->
+                                <div class="content">
+                                    <h3><a href="#">Mj Naidu</a></h3>
+                                    <div class="cate"><a href="#">Super Speciality Hospital</a></div>
+                                </div><!-- /.content -->  
+                            </figure><!-- /.portfolio-thumb -->               
+                        </div><!-- /.portfolio-item -->
+                    </div><!-- /.col-lg-4 -->
+                    
+                    <div class="col-md-6 col-lg-4 animation item">
+                        <div class="portfolio-item" data-animate="hg-zoomIn">
+                            <figure class="portfolio-thumb">
+                                <img src="{% static 'assets/images/portfolio/2/u4.jpg' %}" alt="Portfolio Item">
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!--  /.overlay -->
+                                    <div class="popup">
+                                        <div class="popup-inner">
+                                            <a href="{% static 'assets/images/portfolio/2/u4.jpg' %}" class="popup-image"><i class="fa fa-search"></i></a>
+                                        </div><!-- /.popup-inner -->
+                                    </div><!-- /.popup -->
+                                </div><!-- /.overlay-wrapper -->
+                                <div class="content">
+                                    <h3><a href="#">Mj Naidu</a></h3>
+                                    <div class="cate"><a href="#">Super Speciality Hospital</a></div>
+                                </div><!-- /.content -->  
+                            </figure><!-- /.portfolio-thumb -->               
+                        </div><!-- /.portfolio-item -->
+                    </div><!-- /.col-lg-4 --> 
+                    
+                    <div class="col-md-6 col-lg-4 advertisment 3ddesign item">
+                        <div class="portfolio-item" data-animate="hg-zoomIn">
+                            <figure class="portfolio-thumb">
+                                <img src="{% static 'assets/images/portfolio/2/u3.jpg' %}" alt="Portfolio Item">
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!--  /.overlay -->
+                                    <div class="popup">
+                                        <div class="popup-inner">
+                                            <a href="{% static 'assets/images/portfolio/2/u3.jpg' %}" class="popup-image"><i class="fa fa-search"></i></a>
+                                        </div><!-- /.popup-inner -->
+                                    </div><!-- /.popup -->
+                                </div><!-- /.overlay-wrapper -->
+                                <div class="content">
+                                    <h3><a href="#">Mj Naidu</a></h3>
+                                    <div class="cate"><a href="#">Super Speciality Hospital</a></div>
+                                </div><!-- /.content -->  
+                            </figure><!-- /.portfolio-thumb -->               
+                        </div><!-- /.portfolio-item -->
+                    </div><!-- /.col-lg-4 --> 
+                    
+                    <div class="col-md-6 col-lg-4 userinterface item">
+                        <div class="portfolio-item" data-animate="hg-zoomIn">
+                            <figure class="portfolio-thumb">
+                                <img src="{% static 'assets/images/portfolio/2/01.jpg' %}" alt="Portfolio Item">
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!--  /.overlay -->
+                                    <div class="popup">
+                                        <div class="popup-inner">
+                                            <a href="assets/images/portfolio/2/01.jpg' %}" class="popup-image"><i class="fa fa-search"></i></a>
+                                        </div><!-- /.popup-inner -->
+                                    </div><!-- /.popup -->
+                                </div><!-- /.overlay-wrapper -->
+                                <div class="content">
+                                    <h3><a href="#">Mj Naidu</a></h3>
+                                    <div class="cate"><a href="#">Super Speciality Hospital</a></div>
+                                </div><!-- /.content -->  
+                            </figure><!-- /.portfolio-thumb -->               
+                        </div><!-- /.portfolio-item -->
+                    </div><!-- /.col-lg-4 --> 
+                    
+                    <div class="col-md-6 col-lg-4 advertisment item">
+                        <div class="portfolio-item" data-animate="hg-zoomIn">
+                            <figure class="portfolio-thumb">
+                                <img src="{% static 'assets/images/portfolio/2/02.jpg' %}" alt="Portfolio Item">
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!--  /.overlay -->
+                                    <div class="popup">
+                                        <div class="popup-inner">
+                                            <a href="{% static 'assets/images/portfolio/2/02.jpg' %}" class="popup-image"><i class="fa fa-search"></i></a>
+                                        </div><!-- /.popup-inner -->
+                                    </div><!-- /.popup -->
+                                </div><!-- /.overlay-wrapper -->
+                                <div class="content">
+                                    <h3><a href="#">Mj Naidu</a></h3>
+                                    <div class="cate"><a href="#">Super Speciality Hospital</a></div>
+                                </div><!-- /.content -->  
+                            </figure><!-- /.portfolio-thumb -->               
+                        </div><!-- /.portfolio-item -->
+                    </div><!-- /.col-lg-4 --> 
+                    
+                    <div class="col-md-6 col-lg-4 3ddesign item">
+                        <div class="portfolio-item" data-animate="hg-zoomIn">
+                            <figure class="portfolio-thumb">
+                                <img src="{% static 'assets/images/portfolio/2/rally-01.jpg' %}" alt="Portfolio Item">
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!--  /.overlay -->
+                                    <div class="popup">
+                                        <div class="popup-inner">
+                                            <a href="{% static 'assets/images/portfolio/2/rally-01.jpg' %}" class="popup-image"><i class="fa fa-search"></i></a>
+                                        </div><!-- /.popup-inner -->
+                                    </div><!-- /.popup -->
+                                </div><!-- /.overlay-wrapper -->
+                                <div class="content">
+                                    <h3><a href="#">Mj Naidu</a></h3>
+                                    <div class="cate"><a href="#">Super Speciality Hospital</a></div>
+                                </div><!-- /.content -->  
+                            </figure><!-- /.portfolio-thumb -->               
+                        </div><!-- /.portfolio-item -->
+                    </div><!-- /.col-lg-4 --> 
+                    
+                    <div class="col-md-6 col-lg-4 advertisment item">
+                        <div class="portfolio-item" data-animate="hg-zoomIn">
+                            <figure class="portfolio-thumb">
+                                <img src="{% static 'assets/images/portfolio/2/rally-02.jpg' %}" alt="Portfolio Item">
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!--  /.overlay -->
+                                    <div class="popup">
+                                        <div class="popup-inner">
+                                            <a href="{% static 'assets/images/portfolio/2/rally-02.jpg' %}" class="popup-image"><i class="fa fa-search"></i></a>
+                                        </div><!-- /.popup-inner -->
+                                    </div><!-- /.popup -->
+                                </div><!-- /.overlay-wrapper -->
+                                <div class="content">
+                                    <h3><a href="#">>Mj Naidu</a></h3>
+                                    <div class="cate"><a href="#">Super Speciality Hospital</a></div>
+                                </div><!-- /.content -->  
+                            </figure><!-- /.portfolio-thumb -->               
+                        </div><!-- /.portfolio-item -->
+                    </div><!-- /.col-lg-4 --> 
+                    
+                    <div class="col-md-6 col-lg-4 3ddesign animation item">
+                        <div class="portfolio-item" data-animate="hg-zoomIn">
+                            <figure class="portfolio-thumb">
+                                <img src="{% static 'assets/images/portfolio/2/rally-03.jpg' %}" alt="Portfolio Item">
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!--  /.overlay -->
+                                    <div class="popup">
+                                        <div class="popup-inner">
+                                            <a href="{% static 'assets/images/portfolio/2/rally-03.jpg' %}" class="popup-image"><i class="fa fa-search"></i></a>
+                                        </div><!-- /.popup-inner -->
+                                    </div><!-- /.popup -->
+                                </div><!-- /.overlay-wrapper -->
+                                <div class="content">
+                                    <h3><a href="#">Mj Naidu</a></h3>
+                                    <div class="cate"><a href="#">Super Speciality Hospital</a></div>
+                                </div><!-- /.content -->  
+                            </figure><!-- /.portfolio-thumb -->               
+                        </div><!-- /.portfolio-item -->
+                    </div><!-- /.col-lg-4 --> 
+                    
+                    <div class="col-md-6 col-lg-4 userinterface item">
+                        <div class="portfolio-item" data-animate="hg-zoomIn">
+                            <figure class="portfolio-thumb">
+                                <img src="{% static 'assets/images/portfolio/2/rally-05.jpg' %}" alt="Portfolio Item">
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!--  /.overlay -->
+                                    <div class="popup">
+                                        <div class="popup-inner">
+                                            <a href="assets/images/portfolio/2/rally-05.jpg' %}" class="popup-image"><i class="fa fa-search"></i></a>
+                                        </div><!-- /.popup-inner -->
+                                    </div><!-- /.popup -->
+                                </div><!-- /.overlay-wrapper -->
+                                <div class="content">
+                                    <h3><a href="#">Mj Naidu</a></h3>
+                                    <div class="cate"><a href="#">Super Speciality Hospital</a></div>
+                                </div><!-- /.content -->  
+                            </figure><!-- /.portfolio-thumb -->               
+                        </div><!-- /.portfolio-item -->
+                    </div><!-- /.col-lg-4 --> 
+                </div><!-- /.row -->
+                <!-- <div class="show-more pd-t-20">
+                    <a href="#" class="btn btn-default">Read More</a>
+                </div> -->
+                <!-- /.show-more -->
+            </div><!-- /.container -->
+        </div><!--~~./ end portfolio block ~~-->
+        
+{% endblock %}

@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% load static %}                                          
+{% block content %}
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title">Get in <span>Touch</span></h2><!-- /.inner-banner__title -->
+                <ul class="thm-breadcrumb">
+                    <li class="thm-breadcrumb__item"><a class="thm-breadcrumb__link" href="{% url 'index' %}">Home</a></li>
+                    <li class="thm-breadcrumb__item current"><a class="thm-breadcrumb__link" href="{%  url 'contact' %}">contact us</a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Contact Info Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="contact-info-block pd-t-100 pd-b-100 mrb-200">
+            <div class="mock-up-thumb-back bg-image-100" style="background-image: url({% static 'assets/images/others/abouts-left.jpg' %})"></div><!-- /.mock-up-thumb-back -->
+            
+            <div class="container">
+                <!-- Title Row -->
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="mock-up-thumb reveal-right">
+                            <img src="{% static 'assets/images/others/about-left11.jpg' %}" alt="Contact Mock" />
+                        </div><!-- /.mock-up-block -->
+                    </div><!-- /.col-lg-5 -->
+                    
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <h4 class="title-sub" data-animate="hg-fadeInUp">contact us
+                              </h4><!--  /.title-sub -->
+                              
+                            <h2 class="title-main" data-animate="hg-fadeInUp">Don’t Hesitate to contact with us for any information or inquiries</h2><!-- /.title-main -->
+                        </div><!-- /.section-title -->
+                        
+                        <div class="contant-info-content" data-animate="hg-fadeInUp">
+                            <div class="info-address">
+                                <span>Vijayawada Address
+                                </span>
+                                <p>#29-13-84, Near Puspha hotel,
+                                    Bramaihyaa Naidu Street,
+                                    Suryarao Peta, Vijayawada,
+                                    Andhra Pradesh 520002.</p>
+                            </div><!-- /.info-address -->
+                            <div class="info-phone">
+                                <span>+ 0866-2435555,2433939<br>
+                                    + 91-9640133302,934666678,  9985104104<br>
+                                       </span> 
+                            </div><!-- /.info-phone -->
+                            <div class="info-email">
+                                <a href="mailto:info@mjnaiduhospitals.com">info@mjnaiduhospitals.com</a>
+                            </div><!-- /.info-email -->
+                        </div><!-- /.contant-info-content -->
+                        
+                        <!-- /.social-status -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!--~~./ end contact info block ~~-->
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Contact Block
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div id="contact-block" class="contact-block mrb-200">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="section-title text-center">
+                            <h4 class="title-sub">send an message</h4><!--  /.title-sub -->
+                            <h2 class="title-main">A good newspaper is a nation talking to itself</h2><!-- /.title-main -->
+                            <div class="divider">
+                                <img src="{% static 'assets/images/icon/divider.png' %}" alt="icon">
+                            </div>
+                        </div><!-- /.section-title -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+            
+            <div class="contact-block-area">
+                <div id="contact_maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.2973862464773!2d80.63590411439063!3d16.511077531831706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fab1403de667%3A0x585641575f7a6512!2sM+J+Naidu+Super+Specialty+Hospital!5e0!3m2!1sen!2sin!4v1464765773131" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="contact-form-area">
+                                <form method="post" class="contact-form hg-form-email">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input name="name" type="text" placeholder="Full Name" />
+                                            </div>
+                                        </div><!-- /.col-md-6 -->                 
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input name="email" type="email" placeholder="Email Address"/>
+                                            </div>
+                                        </div><!-- /.col-md-6 -->             
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input name="phone" type="text" placeholder="Phone Number" />
+                                            </div>
+                                        </div><!-- /.col-md-6 -->
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input name="subject" type="text" placeholder="Subject" />
+                                            </div>
+                                        </div><!-- /.col-md-6 -->
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea name="message" placeholder="Message"></textarea>
+                                            </div>
+                                        </div><!-- /.col-md-12 -->
+
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-default btn-contact">Thank You</button>
+                                        </div><!-- /.col-md-12 -->
+                                    </div><!-- /.row -->
+                                </form><!-- /.contact-form -->
+                            </div><!-- /.contact-form-area -->
+                        </div><!-- /.col-lg-8 -->
+                    </div><!-- /.row -->
+                </div>
+            </div><!-- /.contact-block-area -->
+        </div><!--~~./ end contact block ~~-->
+    
+{% endblock %}
